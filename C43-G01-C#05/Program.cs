@@ -2,6 +2,13 @@
 {
     internal class Program
     {
+        public static void printShape(int count,string shape="/*\\")
+        {
+            for (int i = 0; i < count; i++) {
+                Console.WriteLine(shape);
+            }
+        }
+
         static void Main(string[] args)
         {
             #region Casting (Boxing - UnBoxing)
@@ -83,6 +90,13 @@
             ////OR
 
             //Console.WriteLine(emp?.department?.name??"Not Found");
+
+            #endregion
+
+            #region Function
+            //printShape(15,"<*><*>");//passing by order
+            //printShape(15);//pasing by default
+            //printShape(shape:"*&*",count:10);//passing by name
 
             #endregion
         }
