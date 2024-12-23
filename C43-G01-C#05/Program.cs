@@ -9,19 +9,19 @@
         ///    }
         ///}
 
-        ///public static void swap(int x, int y)
-        ///{
-        ///    int temp = x;
-        ///    x = y;
-        ///    y = temp;
-        ///}
+        public static void swap(int x, int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
 
-        //public static void swap(ref int x,ref int y)
-        //{
-        //    int temp = x;
-        //    x = y;
-        //    y = temp;
-        //}
+        public static void swap(ref int x, ref int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
 
         ///public static int sumArray(int[] arr)
         ///{
@@ -227,6 +227,44 @@
             #endregion
 
             #region Assignment
+
+            #region Q1 - value type parameters
+
+            #region passing by value
+            //int a = 10, b = 4;
+            //Console.WriteLine($"a: {a} , b: {b}");
+            //swap(a, b);
+            //Console.WriteLine($"a: {a} , b: {b}");
+            /*
+                when code run it create to each function stack frame which contain parameters of function and 
+                local variable inside it , so i create a stack frame to main contain a = 10,b = 4,
+                then it call swap function and pass parameters by value so it create a swap stack frame contain x,y,temp,
+                function swap make it's process so it temp = 10,x = 4,y = 10 , so it make the swap inside swap stack frame,
+                after function finish it process it delete this stake frame and it didn't affected a , b values so a still = 10
+                and b still = 4.    
+            */
+
+
+            #endregion
+
+            #region passing by reference
+            //int a = 10, b = 4;
+            //Console.WriteLine($"a: {a} , b: {b}");
+            //swap(ref a,ref b);
+            //Console.WriteLine($"a: {a} , b: {b}");
+
+            /*
+                when code run it create to each function stack frame which contain parameters of function and 
+                local variable inside it , so i create a stack frame to main contain a = 10,b = 4,
+                then it call swap function and passing parameters by reference so i pass variable and it's value ,so any change will be
+                applied to this variable,so it create a swap stack frame contain temp,and while function make its process
+                it rename a to be x and b to be y.function swap make it's process so it temp = 10,x = 4,y = 10 , 
+                it make the swap inside main stack frame,after function finish it's process it return a to it's name with new swap value
+                so a = 4 and b=10 . 
+            */
+            #endregion
+
+            #endregion
 
             #endregion
         }
