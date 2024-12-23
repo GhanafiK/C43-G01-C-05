@@ -65,6 +65,16 @@
         //    mul = x * y;
         //}
 
+        ///public static int sumMyArray(int x, params int[] arr)
+        ///{
+        ///    int sum = 0;
+        ///    for (int i = 0; i < arr.Length; i++)
+        ///    {
+        ///        sum += arr[i];
+        ///    }
+        ///    return sum;
+        ///}
+
         static void Main(string[] args)
         {
             #region Casting (Boxing - UnBoxing)
@@ -207,7 +217,11 @@
             //SumAndMul2(5, 10, ref summ2, ref mull2);
             //Console.WriteLine(summ+" "+mull);
 
-            
+
+            #endregion
+
+            #region Function - params
+            //Console.WriteLine(sumMyArray(10,1,2,3,4,5,6,7,8,9,10));
             #endregion
         }
     }
