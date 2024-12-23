@@ -58,6 +58,33 @@
             #endregion
 
             #endregion
+
+            #region null propagation operator
+            //int [] numbers = null;
+            //for (int i = 0; i < numbers?.Length; i++) {//if numbers has elements it will return nummber of elements
+            //           // if not it retun null and didn't cause null referenece exception
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            //int? x = numbers?.Length;// it can return null so we make x i a nullable type
+            ////or using null coalescing operator
+            //int y = numbers?.Length ?? 22;//if it return nullit will put 22 in y
+
+            //Employee emp=new Employee();
+            //emp.department = new Department();
+            //if (emp != null)
+            //{
+            //    if (emp.department != null)
+            //    {
+            //        Console.WriteLine(emp.department.name);
+            //    }
+            //}
+
+            ////OR
+
+            //Console.WriteLine(emp?.department?.name??"Not Found");
+
+            #endregion
         }
     }
 }
