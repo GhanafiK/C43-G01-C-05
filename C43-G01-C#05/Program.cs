@@ -23,6 +23,37 @@
         //    y = temp;
         //}
 
+        ///public static int sumArray(int[] arr)
+        ///{
+        ///    int sum = 0;
+        ///    arr[0] = 100;
+        ///    for (int i = 0; i < arr.Length; i++)
+        ///    {
+        ///        sum += arr[i];
+        ///    }
+        ///    return sum;
+        ///}
+        ///public static int sumArray(ref int[] arr)
+        ///{
+        ///    int sum = 0;
+        ///    arr[0] = 100;
+        ///    for (int i = 0; i < arr.Length; i++)
+        ///    {
+        ///        sum += arr[i];
+        ///    }
+        ///    return sum;
+        ///}
+        ///public static int sumArray2(ref int[] arr)
+        ///{
+        ///    int sum = 0;
+        ///    arr = new int[] { 4, 5, 6 };
+        ///    for (int i = 0; i < arr.Length; i++)
+        ///    {
+        ///        sum += arr[i];
+        ///    }
+        ///    return sum;
+        ///}
+
         static void Main(string[] args)
         {
             #region Casting (Boxing - UnBoxing)
@@ -133,6 +164,25 @@
             //swap(ref a, ref b);
             //Console.WriteLine(a);
             //Console.WriteLine(b);
+            #endregion
+            #endregion
+
+            #region reference type parameters
+            #region passing by value
+            //int[] numbers = { 1, 2, 3 };
+            //Console.WriteLine(sumArray(numbers));//105
+            //Console.WriteLine(numbers[0]);/100
+            #endregion
+
+            #region passing by reference
+            ///int[] numbers = { 1, 2, 3 };
+            ///Console.WriteLine(sumArray(numbers));//105
+            ///Console.WriteLine(numbers[0]);100
+
+            //EX02
+            //int[] numbers = { 1, 2, 3 };
+            //Console.WriteLine(sumArray2(ref numbers));//15
+            //Console.WriteLine(numbers[0]);//4
             #endregion
             #endregion
         }
