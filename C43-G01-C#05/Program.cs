@@ -130,6 +130,19 @@ namespace C43_G01_C_05
         //    return factorial;
         //}
 
+        //public static string ChangeChar(string msg, char character, int position)
+        //{
+        //    char[] arr = new char[msg.Length];
+        //    string returnedmsg;
+        //    for (int i = 0; i < msg.Length; i++)
+        //    {
+        //        arr[i] = msg[i];
+        //    }
+        //    arr[position] = character;
+        //    returnedmsg=new string(arr);
+        //    return returnedmsg;
+        //}
+
         static void Main(string[] args)
         {
             #region Demo
@@ -453,6 +466,34 @@ namespace C43_G01_C_05
             //while (!flag||num<0);
 
             //Console.WriteLine($"factorial of {num}! = {getFactorial(num)}");
+
+
+            #endregion
+
+            #region Q8
+            //Console.Write("Enter the message: ");
+            //string msg=Console.ReadLine();
+            //int position;
+            //bool flag;
+
+            //do
+            //{
+            //    Console.Write("Enter position: ");
+            //    flag = int.TryParse(Console.ReadLine(), out position);
+            //}
+            //while (!flag || position < 0||position>msg.Length-1);
+
+            //bool flag2;
+            //char charc;
+            //do
+            //{
+            //    Console.Write("Enter char: ");
+            //    flag2 = Char.TryParse(Console.ReadLine(), out charc);
+            //}
+            //while (!flag2);
+
+            //Console.Clear();
+            //Console.WriteLine($"old string: {msg} \nmodified string: {ChangeChar(msg, charc, position)}");
             #endregion
             #endregion
         }
