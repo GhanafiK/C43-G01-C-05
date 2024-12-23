@@ -94,6 +94,18 @@ namespace C43_G01_C_05
         //    return sum;
         //}
 
+        //public static bool checkPrime(int num)
+        //{
+        //    if (num <= 1) return false;
+        //    if (num == 2) return true;
+        //    for (int i = 2; i <= Math.Sqrt(num); i++)
+        //    {
+        //        if (num % i == 0)
+        //            return false; 
+        //    }
+        //    return true;
+        //}
+
         static void Main(string[] args)
         {
             #region Demo
@@ -361,7 +373,21 @@ namespace C43_G01_C_05
             //}
             //while (!flag);
             //Console.WriteLine($"The sum of the digits of the number {num} is: {SumOfDigits(num)}");
-            
+
+            #endregion
+
+            #region Q5
+            //int num;
+            //bool flag;
+
+            //do
+            //{
+            //    Console.Write("Enter a number: ");
+            //    flag = int.TryParse(Console.ReadLine(), out num);
+            //}
+            //while (!flag);
+
+            //Console.WriteLine(checkPrime(num));
             #endregion
             #endregion
         }
