@@ -1,4 +1,6 @@
-﻿namespace C43_G01_C_05
+﻿using System.Globalization;
+
+namespace C43_G01_C_05
 {
     internal class Program
     {
@@ -9,25 +11,25 @@
         ///    }
         ///}
 
-        public static void swap(int x, int y)
-        {
-            int temp = x;
-            x = y;
-            y = temp;
-        }
+        //public static void swap(int x, int y)
+        //{
+        //    int temp = x;
+        //    x = y;
+        //    y = temp;
+        //}
 
-        public static void swap(ref int x, ref int y)
-        {
-            int temp = x;
-            x = y;
-            y = temp;
-        }
+        //public static void swap(ref int x, ref int y)
+        //{
+        //    int temp = x;
+        //    x = y;
+        //    y = temp;
+        //}
 
         ///public static int sumArray(int[] arr)
         ///{
         ///    int sum = 0;
         ///    arr[0] = 100;
-        ///    for (int i = 0; i < arr.Length; i++)
+        ///    for (int i = 0; i<arr.Length; i++)
         ///    {
         ///        sum += arr[i];
         ///    }
@@ -35,21 +37,21 @@
         ///}
         ///public static int sumArray(ref int[] arr)
         ///{
-        ///    int sum = 0;
-        ///    arr[0] = 100;
+        /// int sum = 0;
+        /// arr[0] = 100;
         ///    for (int i = 0; i < arr.Length; i++)
         ///    {
-        ///        sum += arr[i];
+        /// sum += arr[i];
         ///    }
         ///    return sum;
         ///}
         ///public static int sumArray2(ref int[] arr)
         ///{
-        ///    int sum = 0;
-        ///    arr = new int[] { 4, 5, 6 };
+        /// int sum = 0;
+        /// arr = new int[] { 4, 5, 6 };
         ///    for (int i = 0; i < arr.Length; i++)
         ///    {
-        ///        sum += arr[i];
+        /// sum += arr[i];
         ///    }
         ///    return sum;
         ///}
@@ -75,7 +77,7 @@
         ///    return sum;
         ///}
 
-        static void Main(string[] args)
+static void Main(string[] args)
         {
             #region Demo
             #region Casting (Boxing - UnBoxing)
@@ -266,7 +268,49 @@
 
             #endregion
 
+            #region Q2 - Reference type parameters
+            #region passing by value
+            //int[] numbers = { 1, 2, 3 }; // it create a reference in stack look at {1,2,3}
+            //Console.WriteLine(sumArray(numbers));
+            //Console.WriteLine(NumberStyles[0]);//100
+
+            /*
+                when code run it create a main stack frame to store local variable (numbers) so it store 4 bytes (numbers) in stack
+                to store the address in heap that carry obj {1,2,3} so numbers look at obj {1,2,3},when function sumArray call it 
+                store another 4 bytes in stack (arr) to store the address of the same object that (numbers) store so arr and numbers 
+                are lokking to the same object {1,2,3} so if any one of (arr) or (numbers)so  when we change in one of them 
+                the other one will affected by changes ,so when we make arr[0]=100 , numbers affected by this change and 
+                numbers[0] become = 100;
+            */
+            #endregion
+
+            #region passing by reference
+            //int[] numbers = { 1, 2, 3 };
+            //Console.WriteLine(sumArray(ref numbers));
+            //Console.WriteLine(numbers[0]);
+
+            /*
+                when passing value by reference while function making it process it rename array to be arr instead of numbers
+                and make changes on it , after it finish it returned to name array to be numbers with new changes so in 
+                this case numbers[0] will = 100;
+            */
+
+            //ex02
+            //Console.WriteLine(sumArray2(ref numbers));
+            //Console.WriteLine(numbers[0]);
+
+            /*
+                when this code run it create a main stack frame and store local variable (numbers) by store 4 bytes in stack and make it
+                looking on obj {1,2,3} , then when passing parameter by reference it change name of numbers to be arr but 
+                u make this arr locking to another obj {4,5,6} so after function end its process and return array to its name(numbers)
+                numbers will be looking at new obj {4,5,6} and the old object will be unreachable object
+            */
+
+            #endregion
+            #endregion
+
             #endregion
         }
     }
 }
+ 
