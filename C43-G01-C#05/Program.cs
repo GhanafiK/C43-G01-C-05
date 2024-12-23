@@ -54,6 +54,17 @@
         ///    return sum;
         ///}
 
+        //public static void SumAndMul(int x,int y,out int sum,out int mul)
+        //{
+        //    sum = x + y;
+        //    mul = x * y;
+        //}
+        //public static void SumAndMul2(int x,int y,ref int sum,ref int mul)
+        //{
+        //    sum = x + y;
+        //    mul = x * y;
+        //}
+
         static void Main(string[] args)
         {
             #region Casting (Boxing - UnBoxing)
@@ -186,7 +197,18 @@
             #endregion
             #endregion
 
+            #region passing by out
+            //int summ, mull;
+            //SumAndMul(5, 10, out summ, out mull);
+            //Console.WriteLine(summ+" "+mull);
 
+            //// we can use passsing by reference in this case
+            //int summ2 =0, mull2=0;//we must give initial value to it
+            //SumAndMul2(5, 10, ref summ2, ref mull2);
+            //Console.WriteLine(summ+" "+mull);
+
+            
+            #endregion
         }
     }
 }
