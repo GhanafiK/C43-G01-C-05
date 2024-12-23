@@ -76,11 +76,22 @@ namespace C43_G01_C_05
         ///    }
         ///    return sum;
         ///}
-        
+
         //public static void SumAndSub1(int x,int y,out int sum,out int sub)
         //{
         //    sum = x+y;
         //    sub = x-y;
+        //}
+
+        //public static int SumOfDigits(int number)
+        //{
+        //    int sum = 0;
+        //    string num = number.ToString();
+        //    for (int i = 0; i < num.Length; i++)
+        //    {
+        //        sum += int.Parse(num[i].ToString());
+        //    }
+        //    return sum;
         //}
 
         static void Main(string[] args)
@@ -339,6 +350,19 @@ namespace C43_G01_C_05
             //Console.WriteLine($"{SubName} = {subtraction}");
             #endregion
 
+            #region Q4
+            //int num;
+            //bool flag;
+
+            //do
+            //{
+            //    Console.Write("Enter a number: ");
+            //    flag = int.TryParse(Console.ReadLine(), out num);
+            //}
+            //while (!flag);
+            //Console.WriteLine($"The sum of the digits of the number {num} is: {SumOfDigits(num)}");
+            
+            #endregion
             #endregion
         }
     }
