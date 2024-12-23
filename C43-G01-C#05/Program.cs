@@ -2,12 +2,26 @@
 {
     internal class Program
     {
-        public static void printShape(int count,string shape="/*\\")
-        {
-            for (int i = 0; i < count; i++) {
-                Console.WriteLine(shape);
-            }
-        }
+        ///public static void printShape(int count,string shape="/*\\")
+        ///{
+        ///    for (int i = 0; i < count; i++) {
+        ///        Console.WriteLine(shape);
+        ///    }
+        ///}
+
+        ///public static void swap(int x, int y)
+        ///{
+        ///    int temp = x;
+        ///    x = y;
+        ///    y = temp;
+        ///}
+
+        //public static void swap(ref int x,ref int y)
+        //{
+        //    int temp = x;
+        //    x = y;
+        //    y = temp;
+        //}
 
         static void Main(string[] args)
         {
@@ -98,6 +112,28 @@
             //printShape(15);//pasing by default
             //printShape(shape:"*&*",count:10);//passing by name
 
+            #endregion
+
+            #region value type parameters
+            #region passing by value
+            //int a = 9;
+            //int b = 5;
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            //swap(a,b);
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            #endregion
+
+            #region passing by reference
+            //int a = 9;
+            //int b = 5;
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            //swap(ref a, ref b);
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            #endregion
             #endregion
         }
     }
