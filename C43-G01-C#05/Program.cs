@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
 namespace C43_G01_C_05
 {
@@ -117,6 +118,16 @@ namespace C43_G01_C_05
         //            max = array[i];
         //        }
         //    }
+        //}
+
+        //public static int getFactorial(int num)
+        //{
+        //    int factorial = 1;
+        //    for(int i = num; i > 1; i--)
+        //    {
+        //        factorial *= i;
+        //    }
+        //    return factorial;
         //}
 
         static void Main(string[] args)
@@ -428,6 +439,20 @@ namespace C43_G01_C_05
             //Console.Clear();
             //Console.WriteLine($"min: {min} , max: {max}");
 
+            #endregion
+
+            #region Q7
+            //int num;
+            //bool flag;
+
+            //do
+            //{
+            //    Console.Write("Enter a positive number to get factorial: ");
+            //    flag = int.TryParse(Console.ReadLine(), out num);
+            //}
+            //while (!flag||num<0);
+
+            //Console.WriteLine($"factorial of {num}! = {getFactorial(num)}");
             #endregion
             #endregion
         }
