@@ -106,6 +106,19 @@ namespace C43_G01_C_05
         //    return true;
         //}
 
+        //public static void MinMaxArray(ref int[] array, ref int min, ref int max) {
+        //    min = array[0];max = array[0];
+        //    for (int i = 0; i < array.Length; i++) { 
+        //        if (array[i] < min)
+        //        {
+        //            min = array[i];
+        //        }
+        //        if (array[i] > max) { 
+        //            max = array[i];
+        //        }
+        //    }
+        //}
+
         static void Main(string[] args)
         {
             #region Demo
@@ -388,6 +401,33 @@ namespace C43_G01_C_05
             //while (!flag);
 
             //Console.WriteLine(checkPrime(num));
+            #endregion
+
+            #region Q6
+
+            //int arraySize;
+            //bool flag,flag2;
+
+            //do
+            //{
+            //    Console.Write("Enter array size: ");
+            //    flag = int.TryParse(Console.ReadLine(), out arraySize);
+            //}
+            //while (!flag);
+
+            //int[] numbers=new int[arraySize];
+
+            //for (int i = 0; i < numbers.Length;) {
+            //    Console.Write($"Enter element [{i}]: ");
+            //    flag2 = int.TryParse(Console.ReadLine(), out numbers[i]);
+            //    i = flag2 ? ++i : i;
+            //}
+
+            //int min = 0, max = 0;
+            //MinMaxArray(ref numbers, ref min, ref max);
+            //Console.Clear();
+            //Console.WriteLine($"min: {min} , max: {max}");
+
             #endregion
             #endregion
         }
