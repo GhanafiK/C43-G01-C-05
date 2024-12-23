@@ -77,6 +77,7 @@
 
         static void Main(string[] args)
         {
+            #region Demo
             #region Casting (Boxing - UnBoxing)
 
             #region Boxing [Safe Casting]
@@ -222,6 +223,7 @@
 
             #region Function - params
             //Console.WriteLine(sumMyArray(10,1,2,3,4,5,6,7,8,9,10));
+            #endregion 
             #endregion
         }
     }
