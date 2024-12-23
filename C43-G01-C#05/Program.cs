@@ -76,8 +76,14 @@ namespace C43_G01_C_05
         ///    }
         ///    return sum;
         ///}
+        
+        //public static void SumAndSub1(int x,int y,out int sum,out int sub)
+        //{
+        //    sum = x+y;
+        //    sub = x-y;
+        //}
 
-static void Main(string[] args)
+        static void Main(string[] args)
         {
             #region Demo
             #region Casting (Boxing - UnBoxing)
@@ -307,6 +313,30 @@ static void Main(string[] args)
             */
 
             #endregion
+            #endregion
+
+            #region Q3
+            //int num1, num2;
+            //bool flag1, flag2;
+            //do {
+            //    Console.Write("Enter first number: ");
+            //    flag1 = int.TryParse(Console.ReadLine(), out num1);
+            //}while (!flag1);
+            //do {
+            //    Console.Write("Enter second number: ");
+            //    flag2= int.TryParse(Console.ReadLine(), out num2);
+            //}while (!flag2);
+            //Console.Write("give name to be summation name: ");
+            //string SumName=Console.ReadLine();
+            //Console.Write("give name to be subtraction name: ");
+            //string SubName=Console.ReadLine();
+
+            //int summition, subtraction;
+            //SumAndSub1(num1, num2, out summition, out subtraction);
+
+            //Console.Clear();
+            //Console.WriteLine($"{SumName} = {summition}");
+            //Console.WriteLine($"{SubName} = {subtraction}");
             #endregion
 
             #endregion
